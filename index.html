@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookshelf</title>
+  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Bookshelf</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="formTitle">Tambah Buku Baru</h2>
+      <form id="bookForm">
+        <div>
+          <label for="bookFormTitle">Judul</label>
+          <input id="bookFormTitle" type="text" required />
+        </div>
+        <div>
+          <label for="bookFormAuthor">Penulis</label>
+          <input id="bookFormAuthor" type="text" required />
+        </div>
+        <div>
+          <label for="bookFormYear">Tahun</label>
+          <input id="bookFormYear" type="number" required />
+        </div>
+        <div>
+          <label for="bookFormIsComplete">Selesai dibaca</label>
+          <input id="bookFormIsComplete" type="checkbox" />
+        </div>
+        <button id="bookFormSubmit" type="submit">
+          Masukkan Buku ke rak
+        </button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Cari Buku</h2>
+      <form id="searchBook">
+        <label for="searchBookTitle">Judul</label>
+        <input id="searchBookTitle" type="text" />
+        <button id="searchSubmit" type="submit">
+          Cari
+        </button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Belum selesai dibaca</h2>
+      <div id="incompleteBookList">
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Selesai dibaca</h2>
+      <div id="completeBookList">
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
