@@ -12,9 +12,13 @@ This project is built purely with **Vanilla JavaScript** and utilizes the **Web 
 
 ## 📸 Preview
 
+<div align="center">
+
 | Add New Book | Shelves | Search Function |
 |:---:|:---:|:---:|
-| <img src="assets/screenshots/add_new.png" width="200"> | <img src="assets/screenshots/shelves.png" width="200"> | <img src="assets/screenshots/search.png" width="200"> |
+| <img src="assets/screenshots/add_new.png" width="260" alt="Add New Book"> | <img src="assets/screenshots/shelves.png" width="260" alt="Shelves"> | <img src="assets/screenshots/search.png" width="260" alt="Search Feature"> |
+
+</div>
 
 ---
 
