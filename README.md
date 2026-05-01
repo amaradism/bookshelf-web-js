@@ -1,40 +1,68 @@
-# 📚 Bookshelf (Web-JS)
+# 📚 Bookshelf (Web JS)
 
-Bookshelf is a simple web-based book list management application. It allows users to keep track of books they are currently reading, books they have already finished, and manage that list with Edit, Delete, and Search features.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+<br>
+![Storage](https://img.shields.io/badge/API-Web_Storage-success?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Completed-blue?style=for-the-badge)
 
-This project is built using **Vanilla JavaScript** with the **Web Storage API (LocalStorage)**, so book data will not be lost even when the browser is closed or refreshed.
+Bookshelf is a clean, interactive web-based book list management application. It empowers users to easily track books they are currently reading and those they have already finished. 
+
+This project is built purely with **Vanilla JavaScript** and utilizes the **Web Storage API (LocalStorage)**, ensuring that your book library data persists securely in the browser even after a page refresh or closure.
+
+---
+
+## 📸 Preview
+
+| Add New Book | Shelves | Search Function |
+|:---:|:---:|:---:|
+| <img src="assets/screenshots/add_new.png" width="200"> | <img src="assets/screenshots/shelves.png" width="200"> | <img src="assets/screenshots/search.png" width="200"> |
+
+> **Note:** Don't forget to take screenshots of your app and place them in a `screenshots/` folder.
+
+---
 
 ## ✨ Key Features
 
-- **Add New Book**: Enter book data including Title, Author, and Release Year.
-- **Two Separate Shelves**: Categorize books into "Not Yet Finished" and "Finished Reading" shelves.
-- **Move Between Shelves**: Move books from one shelf to another with a single button.
-- **Edit Book**: Update information for a book already on the shelf.
-- **Delete Book**: Remove a book from the shelf (with a safety confirmation pop-up).
-- **Search Book**: Search for a specific book by Title.
-- **Local Storage**: Data is safely stored in the browser's `localStorage`.
-- **Dark Mode UI**: A modern, eye-friendly interface with a dark theme.
+* **Full CRUD Operations:** Add, Read, Update, and Delete book entries effortlessly.
+* **Dual-Shelf System:** Automatically categorizes books into "Not Yet Finished" and "Finished Reading" shelves.
+* **Seamless State Toggling:** Move books between shelves with a single click.
+* **Smart Search:** Quickly find specific books by their title using real-time search filtering.
+* **Data Persistence:** All book data is safely saved to the browser's `localStorage`.
+* **Safe Deletion:** Includes a confirmation pop-up before deleting a book to prevent accidental data loss.
+* **Dark Mode UI:** Features a modern, eye-friendly interface utilizing a dark theme aesthetic.
 
-## 🛠️ Technologies Used
+---
 
-- **HTML5**: Semantic web page structure.
-- **CSS3**: Styling with Custom Properties (Variables), Flexbox, and responsive design.
-- **JavaScript**: DOM manipulation, Event Handling, and Application Logic.
+## 🛠️ Technology Stack
 
-## 🚀 How to Run
+* **HTML5:** Semantic web page structure for better accessibility and SEO.
+* **CSS3:** Custom styling utilizing CSS Variables, Flexbox for layout management, and responsive design principles.
+* **Vanilla JavaScript:** Core application logic handling DOM manipulation, Event Listeners, and data binding.
 
-You don't need to install any dependencies or a special server to run this app. Simply follow these steps:
+---
 
-1. Clone this repository to your local machine:
+## 🚀 Installation & Usage
+
+This application is completely client-side. You don't need to install any Node.js dependencies or configure a local server to run it.
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/amaradism/bookshelf-web-js.git
    ```
-2. Open the project folder.
-3. Double-click on the `index.html` file to open it in your browser of choice.
+2. **Navigate to the project folder:**
+   ```bash
+   cd bookshelf-web-js
+   ```
+3. **Run the app:**
+   Simply double-click the `index.html` file to open it in your default web browser, or use a tool like VS Code's *Live Server* extension.
+
+---
 
 ## 📁 Folder Structure
 
-```
+```text
+bookshelf-web-js/
+├── assets/
+│   └── screenshots/
 ├── css/
 │   └── style.css
 ├── js/
@@ -43,6 +71,11 @@ You don't need to install any dependencies or a special server to run this app. 
 └── README.md
 ```
 
-## 💡 Additional Notes
+---
 
-This project was created to practice fundamental JavaScript concepts such as CRUD (Create, Read, Update, Delete), array manipulation (e.g. `.filter()` and `.find()`), and client-side data persistence.
+## 💡 Educational Scope
+
+This project was specifically developed to practice and demonstrate fundamental frontend web development concepts, including:
+* **Client-Side Data Persistence:** Implementing Web Storage API.
+* **Advanced Array Manipulation:** Utilizing JavaScript array methods like `.filter()`, `.find()`, and `.splice()`.
+* **Dynamic DOM Manipulation:** Creating, rendering, and removing HTML elements dynamically via JavaScript.

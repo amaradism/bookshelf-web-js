@@ -74,8 +74,8 @@ function addBook() {
         bookObject.isComplete = isComplete;
         editingBookId = null;
 
-        bookFormSubmit.innerText = "Masukkan Buku ke rak";
-        formTitle.innerText = "Tambah Buku Baru";
+        bookFormSubmit.innerText = "Add Book to the Shelf";
+        formTitle.innerText = "Add A New Book";
     } else {
         const id = generateId();
         const bookObject = generateBookObject(id, title, author, year, isComplete);
@@ -98,11 +98,11 @@ function makeBook(bookObject) {
 
     const bookAuthor = document.createElement("p");
     bookAuthor.classList.add('bookItemAuthor');
-    bookAuthor.innerText = `Penulis: ${bookObject.author}`;
+    bookAuthor.innerText = `Author: ${bookObject.author}`;
 
     const bookYear = document.createElement("p");
     bookYear.classList.add("bookItemYear");
-    bookYear.innerText = `Tahun: ${bookObject.year}`;
+    bookYear.innerText = `Year: ${bookObject.year}`;
 
     const buttonContainer = document.createElement("div");
 
@@ -110,8 +110,8 @@ function makeBook(bookObject) {
     isCompleteButton.classList.add("bookItemIsCompleteButton");
 
     isCompleteButton.innerText = bookObject.isComplete
-        ? "Belum Selesai dibaca"
-        : "Selesai dibaca";
+        ? "Mark as Unread"
+        : "Mark as Read";
 
     isCompleteButton.addEventListener('click', function () {
         toggleBookStatus(bookObject.id);
@@ -119,14 +119,14 @@ function makeBook(bookObject) {
 
     const deleteButton = document.createElement("button");
     deleteButton.classList.add("bookItemDeleteButton");
-    deleteButton.innerText = "Hapus buku";
+    deleteButton.innerText = "Delete Book";
     deleteButton.addEventListener('click', function () {
         deleteBook(bookObject.id);
     });
 
     const editButton = document.createElement("button");
     editButton.classList.add("bookItemEditButton");
-    editButton.innerText = "Edit buku";
+    editButton.innerText = "Edit Book";
     editButton.addEventListener('click', function () {
         editBook(bookObject.id);
     });
@@ -168,7 +168,7 @@ function deleteBook(bookId) {
     const bookTarget = findBookIndex(bookId);
     if (bookTarget === -1) return;
 
-    const confirmDelete = confirm("Apakah Anda yakin ingin menghapus buku ini?");
+    const confirmDelete = confirm("Are you sure you want to delete this book?");
     if (confirmDelete) {
         books.splice(bookTarget, 1);
 
@@ -189,7 +189,7 @@ function saveData() {
 
 function isStorageExist() {
     if (typeof (Storage) === undefined) {
-        alert('Browser Anda tidak mendukung local storage');
+        alert('Your browser does not support local storage');
         return false;
     }
     return true;
@@ -228,8 +228,8 @@ let editingBookId = null;
 function editBook(bookId) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    bookFormSubmit.innerText = "Simpan Perubahan Buku";
-    formTitle.innerText = "Edit Buku";
+    bookFormSubmit.innerText = "Save Changes";
+    formTitle.innerText = "Edit Book";
 
     const bookTarget = findBook(bookId);
     if (bookTarget === null) return;
