@@ -16,8 +16,6 @@ This project is built purely with **Vanilla JavaScript** and utilizes the **Web 
 |:---:|:---:|:---:|
 | <img src="assets/screenshots/add_new.png" width="200"> | <img src="assets/screenshots/shelves.png" width="200"> | <img src="assets/screenshots/search.png" width="200"> |
 
-> **Note:** Don't forget to take screenshots of your app and place them in a `screenshots/` folder.
-
 ---
 
 ## ✨ Key Features
