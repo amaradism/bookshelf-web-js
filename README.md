@@ -44,7 +44,11 @@ This project is built purely with **Vanilla JavaScript** and utilizes the **Web 
 
 ## 🚀 Installation & Usage
 
-This application is completely client-side. You don't need to install any Node.js dependencies or configure a local server to run it.
+**🌐 Play with the Live Version:**
+You can try the application immediately without downloading anything by visiting the **[Live Demo](https://amaradism.github.io/bookshelf-web-js/)**.
+
+**💻 Run Locally:**
+If you want to view or modify the code on your local machine, this application is completely client-side. You don't need to install any Node.js dependencies.
 
 1. **Clone the repository:**
    ```bash
