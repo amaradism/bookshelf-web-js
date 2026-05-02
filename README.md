@@ -3,6 +3,7 @@
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 <br>
 ![Storage](https://img.shields.io/badge/API-Web_Storage-success?style=for-the-badge) ![Status](https://img.shields.io/badge/Status-Completed-blue?style=for-the-badge)
+[![Live Demo](https://img.shields.io/badge/Demo-Live_Preview-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://amaradism.github.io/bookshelf-web-js/)
 
 Bookshelf is a clean, interactive web-based book list management application. It empowers users to easily track books they are currently reading and those they have already finished. 
 
